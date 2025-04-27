@@ -35,16 +35,21 @@
                 <div class="col-12 col-md-6 col-lg-4 order-lg-2">
 
                     <div class="artist-container text-center">
-                    <img src="img/profil.png" alt="" class="img-fluid profil">
-                    <h1 class="titre"><span class="nom"></span></h1>
+                        <!--img src="img/profil.png" alt="" class="img-fluid profil">
+                        <h1 class="titre"><span class="nom"></span></h1-->
+
+
+
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/01cesHRGDfSDCnASG8kE7T?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
                     </div>
                 </div>
             
                 <div class="col-12 col-md-6 col-lg-4 order-lg-3">
-
                     <div class="artist-container text-center">
-                    <h2>Description</h2>
-                    <p><span class="description"></span></p>
+                        <h2>Description</h2>
+                        <p><span class="description"></span></p>
                     </div>
                 </div>
             
@@ -54,12 +59,16 @@
                     <div class="social-links">
                         <a href="https://www.instagram.com/paul_mp5" class="social-button" target="_blank">Instagram</a>
                         <a href="http://www.youtube.com/@paul_musique" class="social-button" target="_blank">Youtube</a>
+                        <a href="https://www.youtube.com/channel/UCTkBsqXA1edqw0kwiYw8sLA" class="social-button" target="_blank">Youtube Topic</a>
                         <a href="https://open.spotify.com/intl-fr/artist/2qAhRHz4rJBBLaL4Oy0tm7?si=-9sQD-OXTjerARkkY38grw" class="social-button" target="_blank">Spotify</a>
                         <a href="https://soundcloud.com/paul-url-paul" class="social-button" target="_blank">SoundCloud</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6627G7rmgEJixk8W92xoVm?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe-->
+
     </main>
 
 
@@ -73,7 +82,7 @@
 <script>
     // Remplacer les éléments avec la classe "nom" par mon nom
     const nom = "Paul🐣";
-    const description = "Salut ! Je suis passionné par la musique depuis un an. Aujourd'hui, je travaille sur plusieurs projets pour explorer différents styles et émotions. Je travaille sur plein de projets et j'espère pouvoir les publier très bientôt. Merci pour votre soutien, et restez connectés pour découvrir la suite de mon univers musical !";
+    const description = "Salut ! Je suis passionné par la musique depuis un an. Aujourd'hui, je travaille sur plusieurs projets pour explorer différents styles et émotions. J'espère pouvoir les publier très bientôt. Merci pour votre soutien, et restez connectés pour découvrir la suite de mon univers musical !";
     document.querySelectorAll('.nom').forEach(el => {
         el.textContent = nom;
     });
