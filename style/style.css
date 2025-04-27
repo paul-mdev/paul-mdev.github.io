@@ -32,7 +32,7 @@ body {
 /* Header */
 .header-banner {
     box-sizing: border-box;
-    min-height: 60px;
+    min-height: 120px;
     position: relative;
     height: 15vh; /* La hauteur du header représente 15% de la hauteur de l'écran */
 
