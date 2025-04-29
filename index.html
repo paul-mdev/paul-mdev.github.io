@@ -13,83 +13,123 @@
 
 <body>
     <!-- header -->
-    <header class="header-banner">
-        <div class="overlay"></div>
-        <div class="cercle1 decoratif">
-            
-        </div>
-
-        <div class="cercle2 decoratif">
+    <header class="header-banner container mt-4">
+        <div class="toggle-theme-wrapper">
             <button class="toggle-theme" id="toggle-theme">
-                <img src="img/dark-mod.svg" alt="Changer le mode">
+              <img src="img/dark-mod.svg" alt="Changer le mode">
             </button>
-        </div>
+          </div>
+        <!--div class="row gy-4">
+            <div class="col-12"-->
+                <!--div class="cercle1 decoratif">
+                </div-->
+                <!--div class="cercle2 decoratif">
+                    <button class="toggle-theme" id="toggle-theme">
+                        <img src="img/dark-mod.svg" alt="Changer le mode">
+                    </button>
+                </div-->
+            <!--/div>
+        </div-->
     </header>
-
 
     <!-- main -->
     <main>
-        
+
+          
+
+
+
         <div class="container my-5">
             <div class="row gy-4">
                 <div class="col-12 col-md-6 col-lg-4 order-lg-2">
-
-                    <div class="artist-container text-center">
-                        <!--img src="img/profil.png" alt="" class="img-fluid profil">
-                        <h1 class="titre"><span class="nom"></span></h1-->
-
-
-
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/01cesHRGDfSDCnASG8kE7T?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-
+                    <div class="css-container artist text-center">
+                        <img src="img/profil.png" alt="" class="img-fluid profil">
+                        <h1 class="titre"><span class="nom"></span></h1>
                     </div>
                 </div>
             
                 <div class="col-12 col-md-6 col-lg-4 order-lg-3">
-                    <div class="artist-container text-center">
-                        <h2>Description</h2>
+                    <div class="css-container artist">
+                        <h2 class="text-center">Description</h2>
                         <p><span class="description"></span></p>
                     </div>
                 </div>
             
                 <div class="col-12 col-md-12 col-lg-4 order-lg-1">
-                    <div class="social-container text-center">
-                    <h3>Mes réseaux</h3>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/paul_mp5" class="social-button" target="_blank">Instagram</a>
-                        <a href="http://www.youtube.com/@paul_musique" class="social-button" target="_blank">Youtube</a>
-                        <a href="https://www.youtube.com/channel/UCTkBsqXA1edqw0kwiYw8sLA" class="social-button" target="_blank">Youtube Topic</a>
-                        <a href="https://open.spotify.com/intl-fr/artist/2qAhRHz4rJBBLaL4Oy0tm7?si=-9sQD-OXTjerARkkY38grw" class="social-button" target="_blank">Spotify</a>
-                        <a href="https://soundcloud.com/paul-url-paul" class="social-button" target="_blank">SoundCloud</a>
-                        <a href="https://drive.google.com/drive/folders/1KIaHWGu3IWGnsWBxrzJHEqs64pTx2dEP" class="social-button" target="_blank">Drive / Portfolio</a>
+                    <div class="css-container social text-center">
+                        <h3>Mes réseaux pros</h3>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/channel/UCTkBsqXA1edqw0kwiYw8sLA" class="social-button" target="_blank">Youtube Topic</a>
+                            <a href="https://open.spotify.com/intl-fr/artist/6627G7rmgEJixk8W92xoVm?si=7cM6omEkTCKmZumYPAt-QQ" class="social-button" target="_blank">Spotify</a>
+                            <a href="https://soundcloud.com/paul-url-paul" class="social-button" target="_blank">SoundCloud</a>
+                            <a href="https://www.deezer.com/fr/artist/320366391" class="social-button" target="_blank">Deezer</a>    
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-12 order-lg-4">
+                    <div class="css-container social text-center">
+                        <h3>Mes réseaux persos</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/paul_mp5" class="social-button" target="_blank">Instagram</a>
+                            <a href="http://www.youtube.com/@paul_musique" class="social-button" target="_blank">Youtube</a>
+                            <a href="https://drive.google.com/drive/folders/1KIaHWGu3IWGnsWBxrzJHEqs64pTx2dEP" class="social-button" target="_blank">Drive / Portfolio</a>                  
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!--iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6627G7rmgEJixk8W92xoVm?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe-->
+      
+        <div class="container text-center">
+            <div class="spotify-embed">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/01cesHRGDfSDCnASG8kE7T?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <!--div class="spotify-link">
+                <a href="https://open.spotify.com/artist/01cesHRGDfSDCnASG8kE7T" class="social-button" target="_blank" rel="noopener noreferrer">
+                    Écouter sur Spotify
+                </a>
+            </div-->
+         </div>
 
     </main>
 
-
     <!-- footer -->
-    <footer>© 2025 <span class="nom"></span>. Tous droits réservés.</footer>
-
-
+    <footer class="container my-5 mt-5"> <!-- mt-5 correspond à margin top -->
+        <div class="row gy-4">
+            <div class="col-12">
+                <div class="footer-content">
+                    <p><strong>Paul Maillard</strong> — <a href="mailto:paul.mailmusique@gmail.com">paul.mailmusique@gmail.com</a></p>
+                    <p>© 2025 <span class="nom">Paul Maillard</span>. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
 </body>
 
 
 <script>
     // Remplacer les éléments avec la classe "nom" par mon nom
     const nom = "Paul🐣";
-    const description = "Salut ! Je suis passionné par la musique depuis un an. Aujourd'hui, je travaille sur plusieurs projets pour explorer différents styles et émotions. J'espère pouvoir les publier très bientôt. Merci pour votre soutien, et restez connectés pour découvrir la suite de mon univers musical !";
+    const description = `Salut ! Je suis passionné par la musique depuis plusieurs années.  
+Je pratique la guitare, le piano et le chant. J'ai commencé à apprendre la musique en autodidacte, en terminale, sur Bandlab avec mon téléphone.  
+Aujourd'hui, je me plonge dans la production musicale avec Ableton Live, ça fait presque un an maintenant.  
+En ce moment, je travaille sur plusieurs projets pour affiner mon style et transmettre des émotions.  
+J'ai vraiment hâte de vous faire découvrir mes créations !`;
+
+
+
+    
+    
     document.querySelectorAll('.nom').forEach(el => {
         el.textContent = nom;
     });
     document.querySelectorAll('.description').forEach(el => {
         el.textContent = description;
     });
+
+
+
 
 
     // Mode sombre
