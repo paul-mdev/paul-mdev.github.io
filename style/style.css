@@ -28,7 +28,7 @@ body {
   }
 
 
-.dark-mode {
+  .dark-mode {
     background-color: var(--noir);
     color: var(--blanc);
 }
@@ -47,6 +47,148 @@ header, footer{
     overflow: hidden;
     width:96%;
 }
+
+
+
+/* Liens dans la nav */
+.site-nav a {
+  text-decoration: none;
+  color: var(--gris-foncee);
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Sidebar gauche */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10vw; /* largeur relative à l'écran */
+  height: 100vh;
+  display: block; /* visible en desktop */
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+
+header.site-header.css-container {
+  padding: 1rem !important;
+}
+
+
+
+/* Liens en colonne */
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 50px; /* Ajoute de l'espace en haut des liens */
+}
+
+/* Décale le contenu du site */
+body {
+  margin-left: 10vw;
+}
+
+/* Le bouton hamburger */
+.menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  display: none; /* caché par défaut */
+  cursor: pointer;
+}
+
+
+/* ---------- Responsive ---------- */
+
+/* Très grand écran : ≥ 1600px */
+@media (min-width: 1600px) {
+  .site-nav a {
+    font-size: 3rem;
+  }
+}
+
+/* Grand écran : ≥ 1200px */
+@media (min-width: 1200px) {
+  .site-nav a {
+    font-size: 2rem;
+  }
+}
+
+.site-nav a {
+  font-size: 1rem; /* taille par défaut (desktop) */
+}
+
+/* Tablette : moins de 992px */
+@media (max-width: 991px) {
+  .site-nav a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-header {
+    display: none;
+    position: fixed;
+    width: 15vw;
+    height: 100vh;
+    padding-top: 13rem; /* espace pour le bouton */
+    margin-left: 0;
+
+    transform: translateX(-100%);
+  }
+
+  /* quand on appuie sur le hamburger ptn j'ai trop la dalle */
+  .site-header.open {
+    display: block;
+    transform: translateX(0);
+
+  }
+
+  body {
+    margin-left: 0;
+  }
+
+  .site-nav a {
+    font-size: 0.6rem;
+  }
+}
+
+
+
+/* Image de couverture */
+.cover-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
+
+/* Titre de l'album */
+.album-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gris-foncee);
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
 
 .toggle-theme {
     background: none;
@@ -87,6 +229,11 @@ header, footer{
     gap: 1rem;
 }
   
+.css-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .profil{
   align-items: center;
 }
@@ -161,21 +308,27 @@ header, footer{
   }
 
 
-  .dark-mode .css-container,
-  .dark-mode footer
-  {
-    background-color: var(--gris-foncee);
-  }
 
-  .dark-mode footer {
-    color: var(--blanc);
-  }
 
-  .dark-mode .header-banner,
-  .dark-mode .css-container{
-    box-shadow: 0 4px 12px rgba(255,255,255, 0.25); 
-  }
 
+/* dark-mod */
+
+.dark-mode .css-container,
+.dark-mode footer
+{
+  background-color: var(--gris-foncee);
+}
+
+.dark-mode footer,
+.dark-mode .album-title
+{
+  color: var(--blanc);
+}
+
+
+.dark-mode .site-nav a {
+  color: var(--gris-claire);
+}
 
 /* En dark-mode : on change le fond avec un gradient transparent vers noir */
 .dark-mode .header-banner {
@@ -184,12 +337,16 @@ header, footer{
         url("../img/channel_banner.jpg");
 }
 
+
+/* footer */
 footer {
     background-color: var(--gris-claire);
     padding: 30px 20px;
-    text-align: center;
     font-size: 1rem;
     color: var(--gris-foncee);
+
+    width: 80%; /* Réduit la largeur du footer */
+    margin: 0 auto; /* Centre le footer horizontalement */
   }
   
   footer a {
@@ -204,4 +361,3 @@ footer {
   .footer-content p {
     margin: 5px 0;
   }
-  

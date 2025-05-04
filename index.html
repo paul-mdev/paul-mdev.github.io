@@ -4,39 +4,21 @@
 <!-- Nothing to see here (: -->
 
 <head>
+    <title>Portfolio Paul</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Portfolio Paul</title>
+    
+    <script src="/include.js" defer></script>
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header-banner container mt-4">
-        <div class="toggle-theme-wrapper">
-            <button class="toggle-theme" id="toggle-theme">
-              <img src="img/dark-mod.svg" alt="Changer le mode">
-            </button>
-          </div>
-        <!--div class="row gy-4">
-            <div class="col-12"-->
-                <!--div class="cercle1 decoratif">
-                </div-->
-                <!--div class="cercle2 decoratif">
-                    <button class="toggle-theme" id="toggle-theme">
-                        <img src="img/dark-mod.svg" alt="Changer le mode">
-                    </button>
-                </div-->
-            <!--/div>
-        </div-->
-    </header>
+    <!-- header pages -->
+    <div data-include="/layout/header.html"></div>
 
     <!-- main -->
     <main>
-
-
-
         <div class="container my-5">
             <div class="row gy-4">
                 <div class="col-12 col-md-6 col-lg-4 order-lg-2">
@@ -94,17 +76,8 @@
     </main>
 
     <!-- footer -->
-    <footer class="container my-5 mt-5"> <!-- mt-5 correspond à margin top -->
-        <div class="row gy-4">
-            <div class="col-12">
-                <div class="footer-content">
-                    <p><strong>Paul Maillard</strong> — <a href="mailto:paul.mailmusique@gmail.com">paul.mailmusique@gmail.com</a></p>
-                    <p>© 2025 <span class="nom">Paul Maillard</span>. Tous droits réservés.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-      
+    <div data-include="/layout/footer.html"></div>
+
 </body>
 
 
@@ -117,29 +90,12 @@ Aujourd'hui, je me plonge dans la production musicale avec Ableton Live, ça fai
 En ce moment, je travaille sur plusieurs projets pour affiner mon style et transmettre des émotions.  
 J'ai vraiment hâte de vous faire découvrir mes créations !`;
 
-
-
-    
-    
     document.querySelectorAll('.nom').forEach(el => {
         el.textContent = nom;
     });
     document.querySelectorAll('.description').forEach(el => {
         el.textContent = description;
     });
-
-
-
-
-
-    // Mode sombre
-    const bouton = document.getElementById('toggle-theme');
-
-    bouton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    });
-
-    console.log("Abonne toi !")
 
 </script>
 
