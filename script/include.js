@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Abonne toi !")
 
-    
+      // ✅ Initialiser le piano ici, une fois que le HTML du piano est bien chargé
+  if (document.querySelector(".piano-keys")) {
+    initPiano(); // appelle la fonction SEULEMENT si le HTML du piano est présent
+  } else {
+    console.warn("Piano non trouvé dans le DOM !");
+  }
 
   });
-
-
-
-
-
 });

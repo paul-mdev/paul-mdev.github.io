@@ -9,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
+
+    <script src="script/piano.js"></script>
+    <script src="script/include.js" defer></script>
     
-    <script src="/include.js" defer></script>
 </head>
 
 <body>
@@ -19,19 +21,24 @@
 
     <!-- main -->
     <main>
-        <div class="container my-5">
+        <div class="container">
             <div class="row gy-4">
                 <div class="col-12 col-md-6 col-lg-4 order-lg-2">
                     <div class="css-container profil text-center">
                         <img src="img/profil.png" alt="" class="image-profil">
-                        <h1 class="titre-nom"><span class="nom"></span></h1>
+                        <h1 class="titre-nom nom">Paul</h1>
                     </div>
                 </div>
             
                 <div class="col-12 col-md-6 col-lg-4 order-lg-3">
                     <div class="css-container">
                         <h3 class="titre text-center">Description</h2>
-                        <p><span class="description"></span></p>
+                        <p class="description">Salut ! Je suis passionné par la musique depuis plusieurs années.  
+                            Je pratique la guitare, le piano et le chant. J'ai commencé à apprendre la musique en autodidacte, en terminale, sur Bandlab avec mon téléphone.  
+                            Aujourd'hui, je me plonge dans la production musicale avec Ableton Live, ça fait presque un an maintenant.  
+                            En ce moment, je travaille sur plusieurs projets pour affiner mon style et transmettre des émotions.  
+                            J'ai vraiment hâte de vous faire découvrir mes créations !
+                        </p>
                     </div>
                 </div>
             
@@ -60,7 +67,7 @@
             </div>
         </div>
       
-        <div class="container text-center">
+        <div class="container text-center my-5">
             <div class="spotify-embed">
                 <!--iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/01cesHRGDfSDCnASG8kE7T?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe-->
                 <!--iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6627G7rmgEJixk8W92xoVm?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe-->
@@ -73,31 +80,15 @@
             </div-->
          </div>
 
+    <!-- Piano -->
+    <div class="piano-container" data-include="/layout/piano.html"></div>
+
+
     </main>
 
     <!-- footer -->
     <div data-include="/layout/footer.html"></div>
 
 </body>
-
-
-<script>
-    // Remplacer les éléments avec la classe "nom" par mon nom
-    const nom = "Paul"; //🐣
-    const description = `Salut ! Je suis passionné par la musique depuis plusieurs années.  
-Je pratique la guitare, le piano et le chant. J'ai commencé à apprendre la musique en autodidacte, en terminale, sur Bandlab avec mon téléphone.  
-Aujourd'hui, je me plonge dans la production musicale avec Ableton Live, ça fait presque un an maintenant.  
-En ce moment, je travaille sur plusieurs projets pour affiner mon style et transmettre des émotions.  
-J'ai vraiment hâte de vous faire découvrir mes créations !`;
-
-    document.querySelectorAll('.nom').forEach(el => {
-        el.textContent = nom;
-    });
-    document.querySelectorAll('.description').forEach(el => {
-        el.textContent = description;
-    });
-
-</script>
-
 
 </html>
