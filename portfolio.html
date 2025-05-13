@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Nothing to see here (: -->
+
+<head>
+    <title>Portfolio Paul</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <script src="script/include.js" defer></script>
+</head>
+
+<body>
+    <!-- header pages -->
+    <div data-include="/layout/header.html"></div>
+
+
+
+<main>
+    <!-- Section d'introduction et Profil -->
+    <section class="container mt-5">
+        <div class="row">
+            <!-- Container avec image de profil -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="css-container profil text-center">
+                    <img src="img/profil-cv.webp" alt="Image de profil" class="image-profil">
+                    <h1 class="titre-profil">Paul Maillard</h1>
+                </div>
+            </div>
+            
+            <!-- Container avec texte de profil -->
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="css-container">
+                    <h2 class="titre-cv">Portfolio</h2>
+                    <p class="section-description">
+                        Bienvenue sur mon portfolio !
+                    </p>
+
+                    <p class="section-description">
+                        Je m'appelle <strong>Paul Maillard</strong>, j'ai <strong>19 ans</strong> et je suis actuellement étudiant en <strong>BUT2</strong> Informatique à l'IUT de l'UPJV d'Amiens.
+                        Sur ce site, vous découvrirez mes projets, mes compétences, ainsi que mes expériences dans le domaine de <strong>l'informatique</strong>.
+                    </p>
+
+                    <p>
+                       <strong>Consultez également : </strong><a href="cv.html" title="Consulter mon CV">Mon CV</a>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Me Contacter + Formation -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="css-container">
+                    <h3 class="titre-cv">Me contacter</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Téléphone :</strong> 06 95 69 23 22</li>
+                        <li><strong>Email :</strong> <a href="mailto:paul.maillard05@gmail.com">paul.maillard05@gmail.com</a></li>
+                        <li><strong>Adresse :</strong> 58 Avenue Valéry Giscard d’Estaing, Amiens 80480</li>
+                        <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/paul-maillard-pro" target="_blank">www.linkedin.com/in/paul-maillard-pro</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="css-container">
+                    <h3 class="titre-cv">Formation</h3>
+                    <ul>
+                        <li><strong>IUT UPJV d’Amiens</strong>
+                            <ul>
+                                <li>Actuellement en BUT2 d’informatique spécialité développement (rang 6 sur 106)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lycée Jean Paul II, Compiègne</strong> 
+                            <ul>
+                                <li>Baccalauréat général, mention Bien (2023)</li>
+                                <li>Spécialités : Mathématiques et NSI</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Expériences -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="css-container">
+                    <h3 class="titre-cv">Expériences</h3>
+                    <ul>
+                        <li>
+                            <strong>Stage développement informatique</strong> (2 mois) – Clinique Victor Pauchet, Amiens (janvier à mars 2025)
+                            <ul>
+                                <li>Application C# d’archivage de documents</li>
+                                <li>Création d’une base PostgreSQL & connexion Oracle</li>
+                                <li>Développement d’une GED (MVC)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Stage d’observation</strong> – Exotest, Compiègne (juin 2021)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section projets -->
+    <section class="container mt-4">
+        <h3 class="titre-cv">Projets</h3>
+        <div class="row g-4">
+            <!-- Calculatrice Android Studio -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/calculatrice-light.png', 'Calculatrice Android Studio')">
+                    <img src="img/projects/calculatrice-light.png" alt="Calculatrice" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculatrice Android Studio</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extranat -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/extranat.png', 'Application de gestion de nageurs')">
+                    <img src="img/projects/extranat.png" alt="Extranat" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Application de gestion de nageurs</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Masques réseau -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/calculateur-masques-reseau.png', 'Application de calcul de masques réseau')">
+                    <img src="img/projects/calculateur-masques-reseau.png" alt="Masques réseau" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Application de calcul de masques réseau</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaizo (Day + Night) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/kaizo-day.png', 'Jeu vidéo platformer avec Godot Engine (PC & mobile)')">
+                    <img src="img/projects/kaizo-day.png" alt="Kaizo Day" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeu vidéo platformer (Godot)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Génération procédurale -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/generation-procedurale.png', 'Jeu avec génération procédurale infinie')">
+                    <img src="img/projects/generation-procedurale.png" alt="Génération procédurale" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeu avec génération procédurale infinie</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puck-Man -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/puck-man.png', 'Jeu avec génération de labyrinthes aléatoires')">
+                    <img src="img/projects/puck-man.png" alt="Puck-Man" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeu de labyrinthes aléatoires</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Set (Tkinter) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/set.png', 'Recréation du jeu Set en Python avec Tkinter')">
+                    <img src="img/projects/set.png" alt="Set Python" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Recréation du jeu de société “Set” en python avec Tkinter</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API de paiement -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/API-paiement.png', 'Site e-commerce avec API de paiement')">
+                    <img src="img/projects/API-paiement.png" alt="API Paiement" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Site e-commerce avec intégration d’une API de paiement</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestion de fiches de paie -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/gerico.png', 'Site de gestion de fiches de paie')">
+                    <img src="img/projects/gerico.png" alt="Gerico" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestion de fiches de paie</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stations-service -->
+            <!--div class="col-12 col-md-6 col-lg-4">
+                <div class="card project-card h-100" onclick="openPopup('img/projects/stations-service.png', 'Carte interactive des stations-service')">
+                    <img src="img/projects/stations-service.png" alt="Stations-service" class="project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Carte des stations-service</h5>
+                    </div>
+                </div>
+            </div-->
+        </div>
+    </section>
+
+
+    <!-- Section Compétences -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="css-container">
+                    <h3 class="titre-cv">Compétences</h3>
+                    <h4>Langages de programmation</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>Python, GDScript, C# (WinForms, .NET, ASP.NET, Windows Services, Oracle, Npgsql)</span>
+                            <div class="progress-bar" style="width: 70%;">70%</div> <!-- 70% de maîtrise -->
+                        </li>
+                        <li>
+                            <span>Html (Bootstrap), java, SQL (Oracle, MySQL, PgSQL)</span>
+                            <div class="progress-bar" style="width: 60%;">60%</div> <!-- 60% de maîtrise -->
+                        </li>
+
+                        <li>
+                            <span>Javascript (jQuery), PHP, PL/SQL</span>
+                            <div class="progress-bar" style="width: 30%;">30%</div> <!-- 30% de maîtrise -->
+                        </li>
+                        <li>
+                            <span>C, C++</span>
+                            <div class="progress-bar" style="width: 20%;">20%</div> <!-- 20% de maîtrise -->
+                        </li>
+                        <li>
+                            <span>Typescript, React (Node.js, Strapi, Tailwind CSS), Go, Razor</span>
+                            <div class="progress-bar" style="width: 10%;">10%</div> <!-- 10% de maîtrise -->
+                        </li>
+                    </ul>
+                    <div class="row">
+
+                        <!-- Langues -->
+                        <div class="col-12 col-md-6">
+                            <h4 class="titre-cv">Langues</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span>Anglais : avancé</span>
+                                    <div class="progress-bar" style="width: 70%;">B2</div>
+                                </li>
+                                <li>
+                                    <span>Espagnol : novice</span>
+                                    <div class="progress-bar" style="width: 25%;">B1</div>
+                                </li>
+                                <li>
+                                    <span>Japonais : débutant</span>
+                                    <div class="progress-bar" style="width: 10%;">A1</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Bureautique & IDE -->
+                        <div class="col-12 col-md-6">
+                            <h4 class="titre-cv">Bureautique & IDE</h4>
+                            <ul>
+                                <li>Visual Studio Code, Visual Studio 2022</li>
+                                <li>GitHub, Excel</li>
+                                <li>DBeaver, pgAdmin</li>
+                                <li>Canva, Figma</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Profil + Centres d'Intérêts -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="css-container">
+                    <h3 class="titre-cv">Profil</h3>
+                    <ul>
+                        <li>À l'écoute, honnête, bienveillant</li>
+                        <li>Souriant, ouvert d’esprit, fiable et motivé</li>
+                        <li>Sérieux, rigoureux</li>
+                        <li>Esprit logique, capacité d’adaptation et d’apprentissage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="css-container">
+                    <h3 class="titre-cv">Centres d'intérêts</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Sport :</strong> Callisthénie, musculation (BasicFit, footing, vélo)</li>
+                        <li><strong>Musique :</strong> Composition, production, mixage, chant</li>
+                        <li><strong>Instruments :</strong>
+                            <ul>
+                                <li>Piano</li>
+                                <li>Guitare</li>
+                                <li>Ukulélé</li>
+                            </ul>
+                        </li>
+                        <li>
+                        <a href="index.html" target="_blank">
+                             Découvrir mes créations musicales
+                        </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+    <!-- footer -->
+    <div data-include="/layout/footer.html"></div>
+
+    <!-- Popup avec image + texte -->
+    <div id="popup" class="popup" onclick="closePopup()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; flex-direction:column; z-index:9999; text-align:center;">
+        <img id="popup-img" src="" style="max-width:90%; max-height:70%; border:5px solid white; border-radius:10px; margin-bottom:20px;">
+        <p id="popup-text" style="color:white; font-size:1.5rem;"></p>
+    </div>
+
+</body>
+
+
+<script>
+    function openPopup(src, text) {
+        document.getElementById("popup-img").src = src;
+        document.getElementById("popup-text").innerText = text;
+        document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+
+</html>
