@@ -454,7 +454,6 @@ ul ul li {
 
 
 
-
 .unlisted {
     list-style: none; /* Enlève les puces de la liste */
     padding: 0;
@@ -466,19 +465,13 @@ span {
 }
 
 .progress-bar {
-    height: 6px;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-.progress-bar {
     background-color: #4caf50; /* Vert pour les barres */
     border-radius: 5px;
-    height: 20px;
+    height: 15px;
     color: var(--blanc);
+    font-size: 0.85rem;
+    margin-top: 5px;
 }
-
 
 
 

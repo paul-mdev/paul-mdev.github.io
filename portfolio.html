@@ -14,13 +14,13 @@
 </head>
 
 <body>
-    <!-- header pages -->
+    <!-- header -->
     <div data-include="/layout/header.html"></div>
 
 
 
 <main>
-    <!-- Section d'introduction et Profil -->
+    <!-- Section d'introduction + Profil -->
     <section class="container mt-5">
         <div class="row">
             <!-- Container avec image de profil -->
@@ -42,6 +42,10 @@
                     <p class="section-description">
                         Je m'appelle <strong>Paul Maillard</strong>, j'ai <strong>19 ans</strong> et je suis actuellement étudiant en <strong>BUT2</strong> Informatique à l'IUT de l'UPJV d'Amiens.
                         Sur ce site, vous découvrirez mes projets, mes compétences, ainsi que mes expériences dans le domaine de <strong>l'informatique</strong>.
+                    </p>
+
+                    <p>
+                        J'ai découvert l'informatique en terminale en spécialité NSI, et j'ai tout de suite su que c'était ce que je voulais faire plus tard.
                     </p>
 
                     <p>
@@ -230,68 +234,100 @@
             <div class="col-12">
                 <div class="css-container">
                     <h3 class="titre-cv">Compétences</h3>
+
+                    <!-- Langages de programmation -->
                     <h4>Langages de programmation</h4>
                     <ul class="list-unstyled">
                         <li>
-                            <span>Python, GDScript, C# (WinForms, .NET, ASP.NET, Windows Services, Oracle, Npgsql)</span>
-                            <div class="progress-bar" style="width: 70%;">70%</div> <!-- 70% de maîtrise -->
+                            <span>Python, GDScript, C#, HTML</span>
+                            <div class="progress-bar" style="width: 70%;">70%</div>
                         </li>
                         <li>
-                            <span>Html (Bootstrap), java, SQL (Oracle, MySQL, PgSQL)</span>
-                            <div class="progress-bar" style="width: 60%;">60%</div> <!-- 60% de maîtrise -->
-                        </li>
-
-                        <li>
-                            <span>Javascript (jQuery), PHP, PL/SQL</span>
-                            <div class="progress-bar" style="width: 30%;">30%</div> <!-- 30% de maîtrise -->
+                            <span>JavaScript, TypeScript, Java, SQL</span>
+                            <div class="progress-bar" style="width: 45%;">45%</div>
                         </li>
                         <li>
-                            <span>C, C++</span>
-                            <div class="progress-bar" style="width: 20%;">20%</div> <!-- 20% de maîtrise -->
+                            <span>C, C++, PHP, PL/SQL</span>
+                            <div class="progress-bar" style="width: 25%;">25%</div>
                         </li>
                         <li>
-                            <span>Typescript, React (Node.js, Strapi, Tailwind CSS), Go, Razor</span>
-                            <div class="progress-bar" style="width: 10%;">10%</div> <!-- 10% de maîtrise -->
+                            <span>Go, Arduino</span>
+                            <div class="progress-bar" style="width: 10%;">10%</div>
                         </li>
                     </ul>
-                    <div class="row">
 
-                        <!-- Langues -->
-                        <div class="col-12 col-md-6">
-                            <h4 class="titre-cv">Langues</h4>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <span>Anglais : avancé</span>
-                                    <div class="progress-bar" style="width: 70%;">B2</div>
-                                </li>
-                                <li>
-                                    <span>Espagnol : novice</span>
-                                    <div class="progress-bar" style="width: 25%;">B1</div>
-                                </li>
-                                <li>
-                                    <span>Japonais : débutant</span>
-                                    <div class="progress-bar" style="width: 10%;">A1</div>
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- Frameworks & Outils -->
+                    <h4>Frameworks & Outils</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>UI & Web :</strong> WinForms, ASP.NET (Razor), React, Tailwind CSS, Bootstrap, jQuery
+                        </li>
+                        <li>
+                            <strong>Back-End & API :</strong> Node.js, Strapi, Windows Services (C#)
+                        </li>
+                        <li>
+                            <strong>Bases de données :</strong> Oracle, MySQL, PostgreSQL, MongoDB, SQLite
+                        </li>
+                        <li>
+                            <strong>Connecteurs :</strong> Oracle.ManagedDataAccess, Npgsql
+                        </li>
+                        <li>
+                            <strong>SGBD :</strong> DBeaver, pgAdmin, phpMyAdmin, Elasticsearch, Kibana
+                        </li>
+                        <li>
+                            <strong>Outils :</strong> .NET, VSCode, GitHub, Docker, VirtualBox, Postman
+                        </li>
+                        <li>
+                            <strong>IDE :</strong> IntelliJ, PhpStorm, PyCharm, Visual Studio 2022, Godot Editor, Android Studio
+                        </li>
+                    </ul>
 
-                        <!-- Bureautique & IDE -->
-                        <div class="col-12 col-md-6">
-                            <h4 class="titre-cv">Bureautique & IDE</h4>
-                            <ul>
-                                <li>Visual Studio Code, Visual Studio 2022</li>
-                                <li>GitHub, Excel</li>
-                                <li>DBeaver, pgAdmin</li>
-                                <li>Canva, Figma</li>
-                            </ul>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+    <!-- Section Langues + Bureautique -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="css-container">
+                    <h4 class="titre-cv">Langues</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>Anglais : avancé</span>
+                            <div class="progress-bar" style="width: 70%;">B2</div>
+                        </li>
+                        <li>
+                            <span>Espagnol : novice</span>
+                            <div class="progress-bar" style="width: 25%;">B1</div>
+                        </li>
+                        <li>
+                            <span>Japonais : débutant</span>
+                            <div class="progress-bar" style="width: 10%;">A1</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="css-container">
+
+                    <h4 class="titre-cv">Bureautique & Design</h4>
+                    <ul class="list-unstyled">
+                        <li>Microsoft 365</li>
+                        <li>LibreOffice</li>
+                        <li>Canva</li>
+                        <li>Figma</li>
+                        <li>Looping</li>
+                        <li>Balsamic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Section Profil + Centres d'Intérêts -->
     <section class="container mt-4">
