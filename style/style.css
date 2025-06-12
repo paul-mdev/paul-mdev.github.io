@@ -124,7 +124,14 @@ body {
   border: none;
   display: none; /* caché par défaut */
   cursor: pointer;
+  color: var(--noir);
 }
+
+.dark-mode .menu-toggle
+{
+  color: var(--blanc);
+}
+
 
 
 /* ---------- Responsive ---------- */
@@ -138,17 +145,17 @@ body {
   }
 
   .site-header {
-    display: none;
     position: fixed;
 
     /*taille de la page à gauche */
-    width: 45vw;
+    width: 100%;
     height: 100vh;
     margin-left: 0;
     transform: translateX(-300%);
+    text-align: center;
   }
 
-  /* quand on appuie sur le hamburger ptn j'ai trop la dalle */
+  /* quand on appuie sur le hamburger */
   .site-header.open {
     display: block;
     transform: translateX(0);
@@ -160,13 +167,17 @@ body {
   }
 
   .site-nav a {
-    font-size: 0.6rem;
+    font-size: 2.6rem !important;
   }
 
   .site-nav{
-       padding-top: 250rem; /* espace pour le bouton */
+       padding-top: 25rem; /* espace pour le bouton */
   }
 }
+
+
+
+
 
 /* Tablette : moins de 992px */
 @media (max-width: 991px) {
