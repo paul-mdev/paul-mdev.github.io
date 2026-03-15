@@ -287,7 +287,9 @@ body {
     border-radius: 5px; /* bordure arrondie */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
     gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
   
 .css-container:hover {
   transform: scale(1.05);
@@ -316,7 +318,7 @@ body {
     font-family: chakra_bold;
     text-align: center;
     margin: 0;
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 2px;
     animation: fadeIn 1.5s ease-in-out;
 }
